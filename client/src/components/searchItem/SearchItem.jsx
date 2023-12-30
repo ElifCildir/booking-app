@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./searchItem.css";
 
-const SearchItem = ({ item }) => {
+const SearchItem = ({item}) => {
   return (
     <div className="searchItem">
       <img src={item.photos[0]} alt="" className="siImg" />
