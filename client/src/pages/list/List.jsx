@@ -99,7 +99,9 @@ const List = () => {
                     min={1}
                     className="lsOptionInput"
                     placeholder={options.room}
+                  
                   />
+                  
                 </div>
               </div>
             </div>
@@ -112,14 +114,20 @@ const List = () => {
               <>
                 {data.map((item) => (
                   <SearchItem item={item} key={item._id} />
+                  
                 ))}
               </>
+              
             )}
           </div>
         </div>
       </div>
     </div>
+
   );
+
 };
+
+
 
 export default List;
