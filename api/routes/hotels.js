@@ -5,7 +5,8 @@ deleteHotel,
 getHotel,
 getAllHotels,
 countByCity,
-countByType} from "../controllers/hotel.js";
+countByType,
+getHotelRooms} from "../controllers/hotel.js";
 import {verifyAdmin} from "../utils/verifyToken.js";
 
 const router = express.Router();
@@ -23,5 +24,7 @@ router.get("/", getAllHotels);
 router.get("/countByCity", countByCity );
 
 router.get("/countByType", countByType);
+
+router.get("/room/:id", getHotelRooms)
 
 export default router;
