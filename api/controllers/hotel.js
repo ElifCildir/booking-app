@@ -105,3 +105,4 @@ export const getHotelRooms = async (req, res, next) => {
     next(err);
   }
 };
+

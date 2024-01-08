@@ -16,6 +16,8 @@ const SearchReducer = (state, action) => {
   switch (action.type) {
     case "NEW_SEARCH":
       return action.payload;
+    case "SEARCH_CITY":
+        return { ...state, city: action.payload.destination };  
     case "RESET_SEARCH":
       return INITIAL_STATE;
     default:
